@@ -14,6 +14,8 @@
                             aria-current="page">Home</a>
                         <a href="/about"
                             class="<?= isActiveUrl('/about') ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"?> rounded-md px-3 py-2 text-sm font-medium">About</a>
+                        <a href="/notes"
+                            class="<?= isActiveUrl('/notes') ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"?> rounded-md px-3 py-2 text-sm font-medium">Notes</a>
                         <a href="/contact"
                             class="<?= isActiveUrl('/contact') ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"?> rounded-md px-3 py-2 text-sm font-medium">Contact</a>
                     </div>
@@ -46,7 +48,7 @@
                             </button>
                         </div>
 
-                        <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                        <div class="absolute hidden right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                             role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                             <!-- Active: "bg-gray-100", Not Active: "" -->
                             <a href="/" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
