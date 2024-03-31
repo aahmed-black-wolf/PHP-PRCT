@@ -18,4 +18,4 @@
 
 
 
- require ("./views/note.view.php");
+ require ("./views/notes/show.view.php");

@@ -1,6 +1,6 @@
-<?php require("components/head.php")?>
-<?php require("components/nav.php");?>
-<?php require("components/banner.php")?>
+<?php require("views/components/head.php")?>
+<?php require("views/components/nav.php");?>
+<?php require("views/components/banner.php")?>
 <main>
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
         <form method="POST" class="flex flex-col  gap-3">
@@ -18,4 +18,4 @@
     </div>
 </main>
 
-<?php require("components/footer.php")?>
+<?php require("views/components/footer.php")?>
