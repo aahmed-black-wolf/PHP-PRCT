@@ -1,18 +1,18 @@
 <?php
      
-     require "./Validator.php";
+     base_bath("./core/Validator.php");
 
+     $errors = [];
 
-     $heading = "Create Note";
+     const heading = "Create Note";
               
-     $config = require("./config.php");
+     $config = base_bath("./core/config.php");
 
      $db = new Database($config["database"]);
        
 
 
      if($_SERVER['REQUEST_METHOD'] == 'POST') {
-      $errors = [];
    
       if( !Validator::string( $_POST["title"], 1,10) || !Validator::string( $_POST["body"], 1,1000) ) {
          $errors['error'] = "Please enter title from 0  to 10 and body from 0 to 1000";
@@ -32,4 +32,4 @@
       
 
 
- require ("./views/notes/create.view.php");
+     view ("notes/create.view.php",["errors" => $errors]);

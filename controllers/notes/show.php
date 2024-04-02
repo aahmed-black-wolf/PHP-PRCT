@@ -1,11 +1,11 @@
 <?php
      
-     $heading = "Note";
+     const heading = "Note";
          
     
      $errors = new Response();
 
-     $config = require("./config.php");
+     $config = base_bath("./core/config.php");
 
      $db = new Database($config["database"]);
       
@@ -18,4 +18,4 @@
 
 
 
- require ("./views/notes/show.view.php");
+     view("notes/show.view.php",["user"=> $user]);

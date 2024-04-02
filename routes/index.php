@@ -1,7 +1,7 @@
 <?php
 
 
-$routes = require("./routes/routes.php");
+$routes = base_bath("./routes/routes.php");
 
 function abort($code = 404) {
 http_response_code($code);
@@ -14,7 +14,7 @@ die();
 
 function routesToController($url,$routes){
 if(array_key_exists($url,$routes)){
-require($routes[$url]);
+base_bath($routes[$url]);
 }else{
 abort();
 }
